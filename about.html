@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>TabFact</title>
+  <meta name="description" content="TabFact is a large-scale dataset with 16k Wikipedia tables as evidence for 118k human annotated statements.">
+  <meta name="keywords" content="Natural Language Processing">
+  <meta name="author" content="TabFact">
+
+  <link rel="icon" href="dist/pic/favicon.ico">
+
+  <link rel="stylesheet" href="dist/css/bootstrap.css">
+  <link rel="stylesheet" href="dist/css/fonts.css">
+  <link rel="stylesheet" href="dist/css/custom.css">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><b>T<font size="2rem">AB</font>F<font size="2rem">ACT</font></b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#content" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="content">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html"><b>Home</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <!--li class="nav-item">
+          <a class="nav-link" href="explore.html">Explore</a>
+        </li-->
+        <li class="nav-item">
+          <a class="nav-link" href="download.html">Download</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://openreview.net/pdf?id=H1lEN7X30V" target="_blank">Paper</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:wenhuchen@cs.ucsb.edu">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+</br>
+
+
+
+<div class="container" align="justify">
+
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+      <h4>The TabFact Dataset</h4>
+      <hr>
+    </div>
+  </div>
+
+  <div class="row">
+
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+      The problem of verifying whether a textual hypothesis holds the truth based on the
+      given evidence, also known as fact verification, plays an important role in the study of
+      natural language understanding and semantic representation. However, existing studies
+      are restricted to dealing with unstructured textual evidence (e.g., sentences and passages,
+      a pool of passages), while verification using
+      structured forms of evidence, such as tables,
+      graphs, and databases, remains unexplored.
+      This paper specifically aims to study fact verification with semi-structured evidence. We
+      construct a large-scale dataset called TABFACT with 16k Wikipedia tables as evidence
+      for 118k human annotated statements. The
+      statements are labeled as either ENTAILED
+      or REFUTED. TABFACT is challenging since
+      it involves both soft linguistic reasoning and
+      hard symbolic reasoning. To address these
+      challenges, we design two different models:
+      Table Verification Network (TVNet) and Latent Program Algorithm (LPA). TVNet leverages the state-of-the-art BERT model to encode linearized tables and statements into continuous vectors for verification. LPA parses
+      statements into LISP-like programs to execute
+      them against the tables for verification. Both
+      methods achieve similar reasonable accuracy
+      which is yet far from human performance.
+      We also perform comprehensive analysis and
+      demonstrate great future opportunities.
+    </div>
+  </div>
+
+</div>
+
+</br>
+</br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 thumb">
+      <h4>T<font size="3rem">AB</font>F<font size="3rem">ACT</font>Team </h4>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb">
+      <img src="dist/pic/wenhu.jpg" class="rounded img-fluid mx-auto d-block" style="width:11rem;"/>
+      <p class="text-center" style="height:5rem;"><b><a href="https://wenhuchen.github.io/" target="_block">Wenhu Chen</a></b><br/>UCSB</p>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb">
+      <img src="dist/pic/hongmin.jpeg" class="rounded img-fluid mx-auto d-block" style="width:11rem;"/>
+      <p class="text-center" style="height:5rem;"><b><a href="https://scholar.google.com/citations?user=zp8BaywAAAAJ&hl=nl" target="_block">Hongmin Wang</a></b><br/>UCSB</p>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb">
+      <img src="dist/pic/jianshu.png" class="rounded img-fluid mx-auto d-block" style="width:11rem;"/>
+      <p class="text-center" style="height:5rem;"><b><a href="https://chenjianshu.github.io/" target="_block">Jianshu Chen</a></b><br/>Tencent AI Lab</p>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb">
+      <img src="dist/pic/yunkai.png" class="rounded img-fluid mx-auto d-block" style="width:11rem;"/>
+      <p class="text-center" style="height:5rem;"><b><a href="https://lileicc.github.io/" target="_block">Yunkai Zhang</a></b><br/>UCSB</p>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb">
+      <img src="dist/pic/wanghong.jpg" class="rounded img-fluid mx-auto d-block" style="height:11rem;width:11rem;"/>
+      <p class="text-center" style="height:5rem;"><b><a href="https://sites.cs.ucsb.edu/~yfwang/" target="_block">Hong Wang</a></b><br/>UCSB</p>
+    </div>
+
+
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb">
+      <img src="dist/pic/shiyang.jpeg" class="rounded img-fluid mx-auto d-block" style="height:11rem;width:11rem;"/>
+      <p class="text-center" style="height:5rem;"><b><a href="http://shiyangli.me/" target="_block">Shiyang Li</a></b><br/>UCSB</p>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb">
+      <img src="dist/pic/xiyou.png" class="rounded img-fluid mx-auto d-block" style="height:11rem;width:11rem;"/>
+      <p class="text-center" style="height:5rem;"><b><a href="https://zxybazh.github.io" target="_block">Xiyou Zhou</a></b><br/>UCSB</p>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb">
+      <img src="dist/pic/william.jpg" class="rounded img-fluid mx-auto d-block" style="width:11rem;"/>
+      <p class="text-center" style="height:5rem;"><b><a href="http://www.cs.ucsb.edu/~william/" target="_block">William Yang Wang</a></b><br/>UCSB</p>
+    </div>
+  </div>
+</div>
+
+</br>
+</br>
+
+<hr>
+
+<div class="container footer">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 thumb">
+      <p>
+        Copyright &copy; UCSB NLP Group<br/>
+        3530 Phelps Hall<br/>
+        University of California, Santa Barbara<br/>
+        Santa Barbara, CA 93106-5110
+      </p>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 thumb">
+      <p>
+        TabFact is produced by USCB NLP Lab.<br/>
+        The dataset is under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.<br/>
+        Contact the TabFact author by <a href="mailto:wenhuchen@cs.ucsb.edu" target="_blank">wenhuchen@cs.ucsb.edu</a>.
+      </p>
+    </div>
+  </div>
+</div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+<script src="dist/js/bootstrap.js"></script>
+
+</html>
