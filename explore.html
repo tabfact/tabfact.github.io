@@ -75,7 +75,7 @@ $(document).ready(function(){
     $.get(prefix + url, function(data){
         $(`#table1`).html(CSV2Table(data));
     });
-    var text_str = `<p><strong>Wikipedia Title : ${title}</strong><p>`
+    var text_str = `<p><strong>Wikipedia Title : ${title}</strong> from URL: ${url}<p>`
     text_str += `<p>Note: Entailed Statements are in <span style="color:red;">RED</span>, Refuted statements are in <span style="color:green;">Green</span><p><br>`
     for (var i=0; i < text_list.length; i++){
         if(label_list[i] == 1 || label_list[i] == "Entailed"){
@@ -103,7 +103,7 @@ function prev() {
             $(`#table1`).html(CSV2Table(data));
         });
         //$('#wiki1').html(r[2]);
-        var text_str = `<p><strong>Wikipedia Title : ${title}</strong><p>`
+        var text_str = `<p><strong>Wikipedia Title : ${title}</strong> from URL: ${url}<p>`
         text_str += `<p>Note: Entailed Statements are in <span style="color:red;">RED</span>, Refuted statements are in <span style="color:green;">Green</span><p><br>`
 
         for (var i=0; i < text_list.length; i++){
@@ -130,7 +130,7 @@ function next() {
         $(`#table1`).html(CSV2Table(data));
     });
     //$('#wiki1').html(r[2]);
-    var text_str = `<p><strong>Wikipedia Title : ${title}</strong><p>`
+    var text_str = `<p><strong>Wikipedia Title : ${title}</strong> from URL: ${url}<p>`
     text_str += `<p>Note: Entailed Statements are in <span style="color:red;">RED</span>, Refuted statements are in <span style="color:green;">Green</span><p><br>`
 
     for (var i=0; i < text_list.length; i++){
